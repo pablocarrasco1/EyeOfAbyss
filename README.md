@@ -51,3 +51,58 @@ La recolección de objetos se gestiona mediante la **interfaz `Item`**, que defi
 ---
 
 ## 📁 Estructura del proyecto
+
+Assets/
+├── Scenes/          # Escenas del juego (MenuInicio, SampleScene)
+├── Scripts/         # Todos los scripts C# del proyecto
+├── Prefabs/         # Prefabs de objetos, trampas y UI
+├── Sprites/         # Assets gráficos Pixel Art
+└── Audio/           # Efectos de sonido y música
+
+---
+
+## 🎯 Scripts principales
+
+| Script | Responsabilidad |
+|---|---|
+| `Controlador.cs` | Estado global del juego y evento `OnReset` |
+| `ControladorMovimiento.cs` | Movimiento, salto, wall jump y dash del jugador |
+| `VidaJugador.cs` | Sistema de vida e invencibilidad |
+| `VidaUI.cs` | Representación visual de los corazones en el HUD |
+| `CronometroNivel.cs` | Medición y formato del tiempo de partida |
+| `SistemaPuntuaciones.cs` | Gestión y persistencia de la tabla de clasificación |
+| `PantallaFinalControlador.cs` | Pantalla de resultados y selector de nombre arcade |
+| `ObjetoLlave.cs` | Llave de nivel con lógica de reset |
+| `ObjetoVida.cs` | Objeto de curación con lógica de reset |
+| `Recoleccion.cs` | Detección genérica de objetos `Item` |
+| `PlataformaMovil.cs` | Plataforma con movimiento entre dos puntos |
+| `PlataformaFragil.cs` | Plataforma con temporizador de caída y reset |
+| `Trampa.cs` | Daño y rebote físico al jugador |
+| `Item.cs` | Interfaz común para objetos recolectables |
+
+---
+
+## 🕹️ Controles
+
+| Acción | Tecla |
+|---|---|
+| Moverse | `A` / `D`  o  `←` / `→` |
+| Saltar / Doble salto | `Espacio` |
+| Dash | `Shift izquierdo` / `E` |
+| Salto en pared | `Espacio` (junto a una pared) |
+
+---
+
+## 📊 Sistema de puntuaciones
+
+Las partidas completadas se registran en un archivo `scores.json`.
+
+---
+
+## 👤 Autor
+
+**Pablo Carrasco Paredero**  
+DAM2B - IES Venancio Blanco  
+Proyecto Fin de Ciclo 2026  
+Tutor: Alejandro Pérez-Moneo Nieto
+
