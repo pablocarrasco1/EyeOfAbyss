@@ -52,12 +52,14 @@ La recolección de objetos se gestiona mediante la **interfaz `Item`**, que defi
 
 ## 📁 Estructura del proyecto
 
+```
 Assets/
 ├── Scenes/          # Escenas del juego (MenuInicio, SampleScene)
 ├── Scripts/         # Todos los scripts C# del proyecto
 ├── Prefabs/         # Prefabs de objetos, trampas y UI
 ├── Sprites/         # Assets gráficos Pixel Art
 └── Audio/           # Efectos de sonido y música
+```
 
 ---
 
